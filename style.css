@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --light-green: #64ffda;
+  --whitish-blue: #ccd6f6;
+  --blue-bg: #0c182e;
+  --light-blue: #12aebf;
+  --light-orange: #e75111;
+  --font: "Arsenal SC", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  background-color: var(--blue-bg);
+  color: var(--whitish-blue);
+  max-width: 1440px;
+}
+#dp {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  /* background-color: #0c182e; */
+  filter: drop-shadow(0px 0px 12px black);
+  padding: 10px;
+}
+header {
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--whitish-blue);
+  font-size: 1.4rem;
+  position: relative;
+}
+.nav-item::before {
+  content: "";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f45a17;
+  transition: 0.5s;
+}
+.nav-item:hover::before {
+  width: 100%;
+  transition: 0.5s;
+}
+.mode {
+  cursor: pointer;
+  color: var(--whitish-blue);
+  font-size: 22rem;
+}
+#dark,
+#light {
+  font-size: 1.5rem;
+}
+#dark:hover,
+#light:hover {
+  color: var(--light-orange);
+  scale: 1.2;
+  transition: 0.3s ease;
+}
+
+#light {
+  display: none;
+}
