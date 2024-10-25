@@ -177,7 +177,6 @@ nav ul li a {
   height: 300px;
   width: 100%;
   gap: 1rem;
-  border: 1px solid var(--whitish-blue);
 }
 
 .skill {
@@ -200,7 +199,6 @@ nav ul li a {
   align-items: center;
 }
 .skill-list {
-  border: 1px solid var(--whitish-blue);
   /* width: 50%; */
   display: flex;
   gap: 1rem;
