@@ -1,6 +1,6 @@
 My Portfolio
 
-Welcome to my personal portfolio! This project showcases my skills, projects, and experience as a developer. Below you’ll find an overview of what’s included, along with instructions for exploring the code and setting it up locally.
+Welcome to my portfolio! This project showcases my skills, projects, and experience as a developer. Below you’ll find an overview of what’s included, along with instructions for exploring the code and setting it up locally.
 
 📜 Overview
 This portfolio is designed to:
@@ -15,9 +15,9 @@ JavaScript for interactive elements
 ✨ Features
 Responsive Design – Optimized for all device sizes
 Interactive Projects – Showcase of my favorite projects
-Contact Form – Simple form for visitors to get in touch
+Contact Form – This simple form for visitors to get in touch
 📸 Screenshot
-![Screenshot of Portfolio](./Assets/ss.png)
+![Screenshot of Portfolio](./Assests/ss.png)
 
 🚀 Getting Started
 To run this project locally:
