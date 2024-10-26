@@ -5,6 +5,7 @@ const project = document.getElementById("project");
 const contact = document.getElementById("contact");
 const skills = document.querySelector(".skills");
 const projects = document.querySelector(".projects");
+const contacts = document.querySelector(".contacts");
 const role = [
   "Nasif Fuad",
   "A FrontendDeveloper",
@@ -31,4 +32,7 @@ skill.addEventListener("click", () => {
 });
 project.addEventListener("click", () => {
   projects.scrollIntoView({ behavior: "smooth" });
+});
+contact.addEventListener("click", () => {
+  contacts.scrollIntoView({ behavior: "smooth" });
 });
