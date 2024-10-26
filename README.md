@@ -17,7 +17,7 @@ Responsive Design – Optimized for all device sizes
 Interactive Projects – Showcase of my favorite projects
 Contact Form – Simple form for visitors to get in touch
 📸 Screenshot
-![Screenshot of Portfolio](./assets/ss.JPG)
+![Screenshot of Portfolio](./Assets/ss.JPG)
 
 🚀 Getting Started
 To run this project locally:
