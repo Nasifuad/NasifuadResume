@@ -30,6 +30,12 @@ body {
   color: #64ffda;
   font-size: 2rem;
 }
+#dp:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: 0.3s ease;
+  filter: drop-shadow(0 0 5px #64ffda);
+}
 header {
   position: relative;
   display: flex;
@@ -79,6 +85,7 @@ nav ul li a {
 }
 #dark:hover,
 #light:hover {
+  cursor: pointer;
   color: var(--light-orange);
   scale: 1.2;
   transition: 0.3s ease;
@@ -133,7 +140,16 @@ nav ul li a {
   align-items: baseline;
   gap: 0.7rem;
 }
-
+.loc {
+  color: rgb(255, 21, 0);
+  font-size: 1.3rem;
+}
+.loc-txt {
+  font-size: 1.3rem;
+  color: silver;
+  font-weight: 900;
+  cursor: pointer;
+}
 .loc-txt::after {
   content: "";
   height: 10px;
@@ -173,7 +189,8 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   height: 300px;
   width: 100%;
   gap: 1rem;
@@ -193,11 +210,6 @@ nav ul li a {
   display: block;
 }
 
-.slill-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .skill-list {
   /* width: 50%; */
   display: flex;
@@ -205,6 +217,7 @@ nav ul li a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 .skill-list img {
   width: 100px;
@@ -220,6 +233,7 @@ nav ul li a {
 .skill-list img:hover {
   filter: grayscale(0%);
   transition: 0.5s;
+  scale: 1.2;
 }
 @keyframes blink {
   0% {
@@ -233,13 +247,36 @@ nav ul li a {
     box-shadow: 0 0 10px #4bfb00;
   }
 }
+.projects {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  /* align-items: center; */
+  height: 300px;
+  width: 100%;
+  gap: 1rem;
+}
+.pokemon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #000c22;
+}
+.pokemon img {
+  width: 500px;
+}
 @media (max-width: 905px) {
   .hero-info {
     width: 100%;
     text-align: center;
   }
   #auto {
-    width: 100%;
+    width: max-content;
+    font-size: 2rem;
   }
 }
 @keyframes rotate {
