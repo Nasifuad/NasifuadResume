@@ -318,13 +318,15 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  gap: 1rem;
 }
 .experiences {
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 50%;
+  text-align: start;
 }
 /* .experience,
 .university {
@@ -352,11 +354,17 @@ nav ul li a {
   font-size: 1.5rem;
   font-weight: 900;
 }
-.company-desc {
+.company-desc,
+.university-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: start;
+}
+.educations {
+  width: 50%;
+  text-align: start;
 }
 @media (max-width: 905px) {
   .hero-info {
