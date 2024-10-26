@@ -6,6 +6,11 @@ const contact = document.getElementById("contact");
 const skills = document.querySelector(".skills");
 const projects = document.querySelector(".projects");
 const contacts = document.querySelector(".contacts");
+const send = document.getElementById("send");
+const success = document.querySelector(".success");
+const msg_me = document.querySelector(".msg-me");
+const count = document.querySelector("#count");
+const error = document.querySelector("#error");
 const role = [
   "Nasif Fuad",
   "A FrontendDeveloper",
@@ -35,4 +40,16 @@ project.addEventListener("click", () => {
 });
 contact.addEventListener("click", () => {
   contacts.scrollIntoView({ behavior: "smooth" });
+});
+
+send.addEventListener("click", () => {
+  if (msg_me.value == "") {
+    success.style.display = "none";
+    error.style.display = "block";
+  } else {
+    count.innerText = parseInt(count.innerText) + 1;
+    success.style.display = "block";
+    msg_me.value = "";
+    error.style.display = "none";
+  }
 });
