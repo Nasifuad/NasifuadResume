@@ -4,6 +4,7 @@ const skill = document.getElementById("skill");
 const project = document.getElementById("project");
 const contact = document.getElementById("contact");
 const skills = document.querySelector(".skills");
+const projects = document.querySelector(".projects");
 const role = [
   "Nasif Fuad",
   "A FrontendDeveloper",
@@ -12,7 +13,7 @@ const role = [
 ];
 let charIndex = 0;
 let roleIndex = 0;
-auto();
+// auto();
 function auto() {
   name_auto.innerText = role[roleIndex].slice(0, charIndex);
   charIndex++;
@@ -27,4 +28,7 @@ function auto() {
 }
 skill.addEventListener("click", () => {
   skills.scrollIntoView({ behavior: "smooth" });
+});
+project.addEventListener("click", () => {
+  projects.scrollIntoView({ behavior: "smooth" });
 });

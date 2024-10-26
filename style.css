@@ -123,6 +123,7 @@ nav ul li a {
   color: var(--whitish-blue);
   font-size: 2.5rem;
   font-weight: 800;
+  transition: 0.5s ease;
 }
 #name {
   color: #ad00dd;
@@ -251,31 +252,81 @@ nav ul li a {
   padding: 1rem 3rem;
   display: flex;
   flex-direction: column;
-  /* text-align: center; */
-  /* align-items: center; */
   height: 300px;
   width: 100%;
   gap: 1rem;
+  /* text-align: center; */
+}
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 10px; */
 }
 .pokemon {
+  width: 50%;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   padding: 1rem;
-  background-color: #000c22;
+  /* background-color: #fefefe; */
+  text-align: center;
+  position: relative;
+  /* border: 1px solid black; */
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(246, 243, 243);
 }
 .pokemon img {
-  width: 500px;
+  width: 100%;
 }
+.pokemon-box {
+  position: relative;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.pokemon-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2rem;
+  background-color: #0c182e;
+}
+
+.git {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #090303aa;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  opacity: 0;
+  /* transition: 1s ease; */
+}
+.git i:hover {
+  scale: 1.2;
+  transition: 0.5s ease;
+}
+.pokemon-box:hover .git {
+  opacity: 1;
+  transition: 1s ease;
+}
+
 @media (max-width: 905px) {
   .hero-info {
     width: 100%;
     text-align: center;
   }
   #auto {
-    width: max-content;
+    width: 100%;
     font-size: 2rem;
   }
 }
