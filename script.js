@@ -19,7 +19,7 @@ const role = [
 ];
 let charIndex = 0;
 let roleIndex = 0;
-// auto();
+auto();
 function auto() {
   name_auto.innerText = role[roleIndex].slice(0, charIndex);
   charIndex++;
