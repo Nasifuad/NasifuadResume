@@ -1,6 +1,6 @@
 My Portfolio
 
-Welcome to my portfolio! This project showcases my skills, projects, and experience as a developer. Below you’ll find an overview of what’s included, along with instructions for exploring the code and setting it up locally.
+Welcome to my portfolio! This project showcases my skills, projects, and experience as a developer. Below you’ll find an overview of what’s included and instructions for exploring the code and setting it up locally.
 
 📜 Overview
 This portfolio is designed to:
