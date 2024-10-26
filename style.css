@@ -326,6 +326,7 @@ nav ul li a {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  /* flex-direction: column; */
   gap: 1rem;
 }
 .experiences {
@@ -485,6 +486,18 @@ nav ul li a {
   }
   .skill-list {
     width: 100%;
+  }
+  .career-edu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts {
+    justify-content: center;
+    align-items: center;
+  }
+  .skill-list {
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   }
 }
 @keyframes rotate {
