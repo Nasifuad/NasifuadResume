@@ -7,6 +7,9 @@
   --light-orange: #e75111;
   --font: "Arsenal SC", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
